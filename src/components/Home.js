@@ -2,6 +2,7 @@ import React from 'react';
 import './Styles.css'; // Import custom CSS for Home component styling
 
 const Home = () => {
+  const googleDriveLink = "https://drive.google.com/file/d/15CtFdAe1_eS7VFrWGisMw4rxAQYbG_67/view?usp=drive_link";
   return (
     <div className="intro">
         <div className="intro-text">
@@ -13,7 +14,10 @@ const Home = () => {
         </div>
         <div className="intro-actions">
           <button className="btn btn-primary">Hire Me</button>
-          <button className="btn btn-secondary">Download</button>
+          <a href={googleDriveLink} download>
+            <button className="btn btn-secondary">Download</button>
+          </a>
+          
         </div>
     </div>
   );

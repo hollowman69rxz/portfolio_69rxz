@@ -85,6 +85,46 @@ h1, h2 {
 }
 
 /* Portfolio Component Styles */
+.project-container {
+  margin: 0 auto;
+  padding: 20px;
+  max-width: 800px;
+}
+
+.section-heading {
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.section-content > div {
+  margin-bottom: 40px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #ccc;
+}
+
+/* .thumbnail {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 10px 0;
+} */
+
+.project-button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.project-button:hover {
+  background-color: #0056b3;
+}
 .project-item {
     background-color: #064663;
     margin: 20px 0;
@@ -128,7 +168,7 @@ h1, h2 {
   }
   
   .thumbnail:hover {
-    transform: scale(4.2); /* Perbesar gambar saat dihover */
+    transform: scale(2.2); /* Perbesar gambar saat dihover */
   }
   
   .login-container {
@@ -186,4 +226,52 @@ h1, h2 {
         width: calc(100% - 20px);
         max-width: none;
     }
+}
+
+.kanban-container {
+  width: 100%;
+  padding: 20px;
+}
+
+.section-heading {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.kanban-board {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.kanban-card {
+  background-color: #f0f0f0;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  width: 300px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.thumbnail {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.project-button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.project-button:hover {
+  background-color: #0056b3;
 }
